@@ -17,4 +17,13 @@ public class Item {
 		this.price = price;
 		this.quantity = quantity;
 	}
+	
+	public double getTotal() {
+		return (quantity * price);
+	}
+	
+	@Override
+	public String toString() {
+		return "" + name + ", Price: " + price + ", Qty: " + quantity;
+	}
 }

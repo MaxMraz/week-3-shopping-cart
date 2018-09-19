@@ -26,4 +26,12 @@ public class ShoppingCart {
 		this.contents.remove(item);
 	}
 
+	public double getTotal() {
+		double total = 0;
+		for (Item currentItem: contents) {
+			total += currentItem.getTotal();
+		}
+		return total;
+	}
+
 }
